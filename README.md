@@ -1,8 +1,51 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Overview
+This is my personal portfolio website built using **React.js, Tailwind CSS, and Framer Motion**. It showcases my **projects, skills, experience, and certifications** in an interactive and modern UI.
 
-Currently, two official plugins are available:
+## 🛠 Tech Stack
+- **Frontend:** React.js, Tailwind CSS, Framer Motion
+- **Routing:** React Router
+- **State Management:** useState, useEffect
+- **Deployment:** Netlify (Frontend), Render (Backend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎨 Features
+- 🔥 **Dark Mode Toggle** for a better viewing experience
+- 📂 **Projects Section** with live demo and GitHub links
+- 🎓 **Education & Work Experience** in a well-structured format
+- 🏆 **Certifications** with **popup image zoom**
+- 📩 **Contact Form** integrated with Formspree
+- 📜 **Downloadable Resume** option
+- 🌍 **Fully Responsive** across devices
+
+## 📂 Project Structure
+```
+portfolio/
+├── public/            # Static assets (resume, images, etc.)
+├── src/
+│   ├── components/    # Reusable UI components (Navbar, Footer, etc.)
+│   ├── pages/         # Main pages (About, Projects, Contact, Experience)
+│   ├── App.jsx        # Main application file
+│   ├── index.css      # Global styles
+│   ├── main.jsx       # React entry point
+│   ├── vite.config.js # Vite configuration
+│   ├── tailwind.config.js # Tailwind CSS setup
+```
+
+## 🌍 Live Demo
+🔗 **[Visit Portfolio](https://your-portfolio.netlify.app)**  
+📂 **[GitHub Repository](https://github.com/GanishwarArun/your-repo-name)**
+
+## 🚀 How to Run Locally
+```bash
+git clone https://github.com/GanishwarArun/your-repo-name.git
+cd portfolio
+npm install
+npm run dev
+```
+
+## 📨 Contact
+📧 Email: ganishwardeveloper@gmail.com  
+🔗 LinkedIn: [Ganishwar K](https://www.linkedin.com/in/ganishwar-k-fullstackdeveloper/)  
+💻 GitHub: [GanishwarArun](https://github.com/GanishwarArun)
+
