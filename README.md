@@ -32,8 +32,8 @@ portfolio/
 │   ├── tailwind.config.js # Tailwind CSS setup
 ```
 
-## 🌍 Live Demo
-🔗 **[Visit Portfolio](https://your-portfolio.netlify.app)**  
+## 🌍 Live Demo   
+🔗 **[Visit Portfolio](https://ganishwar-portfolio.netlify.app/)**  
 📂 **[GitHub Repository](https://github.com/GanishwarArun/your-repo-name)**
 
 ## 🚀 How to Run Locally
