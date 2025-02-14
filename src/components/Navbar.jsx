@@ -82,24 +82,3 @@ function Navbar({ darkMode, setDarkMode }) {
 
 export default Navbar;
 
-// import { Link } from "react-router-dom";
-// import { FaSun, FaMoon } from "react-icons/fa";
-
-// function Navbar({ darkMode, setDarkMode }) {
-//     return (
-//         <nav className="flex justify-between items-center p-4 shadow" >
-//             <h1 className="text-xl font-bold" >Ganishwar Portfolio</h1>
-//             <div className="flex gap-4">
-//                 <Link to='/'>Home</Link>
-//                 <Link to='/about'>About</Link>
-//                 <Link to='/projects'>Projects</Link>
-//                 <Link to='/contact'>Contact</Link>
-//                 <button onClick={() => setDarkMode(!darkMode)}>
-//                     {darkMode ? <FaSun /> : <FaMoon />}
-//                 </button>
-//             </div>
-//         </nav>
-//     )
-
-// }
-// export default Navbar;
