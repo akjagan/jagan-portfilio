@@ -1,69 +1,61 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar({ darkMode, setDarkMode }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Apply dark mode to the entire page
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark", "bg-gray-900", "text-white");
+    } else {
+      document.body.classList.remove("dark", "bg-gray-900", "text-white");
+    }
+  }, [darkMode]);
+
   return (
     <nav
-      className={`flex justify-between items-center p-4 shadow fixed w-full top-0 z-50 transition-colors duration-300 ${
+      className={`fixed w-full top-0 z-50 p-4 shadow-md transition-colors duration-300 flex justify-between items-center ${
         darkMode
           ? "bg-gray-900 text-white shadow-gray-800"
           : "bg-white text-gray-800 shadow-gray-200"
       }`}
     >
-      <h1 className="text-xl font-bold">Ganishwar Portfolio</h1>
-      <div className="flex gap-6 items-center">
-        <Link
-          to="/"
-          className={`hover:text-blue-500 transition-colors duration-300 ${
-            darkMode
-              ? "text-gray-300 hover:text-blue-400"
-              : "text-gray-700 hover:text-blue-600"
-          }`}
-        >
-          Home
-        </Link>
-        <Link
-          to="/about"
-          className={`hover:text-blue-500 transition-colors duration-300 ${
-            darkMode
-              ? "text-gray-300 hover:text-blue-400"
-              : "text-gray-700 hover:text-blue-600"
-          }`}
-        >
-          About
-        </Link>
-        <Link
-          to="/projects"
-          className={`hover:text-blue-500 transition-colors duration-300 ${
-            darkMode
-              ? "text-gray-300 hover:text-blue-400"
-              : "text-gray-700 hover:text-blue-600"
-          }`}
-        >
-          Projects
-        </Link>
+      {/* Logo */}
+      <Link
+        to="/"
+        className="text-xl font-bold cursor-pointer hover:text-blue-500 transition-colors duration-300"
+        onClick={() => setMenuOpen(false)} 
+      >
+        Ganishwar Portfolio
+      </Link>
 
-        <Link
-          to="/experience"
-          className={`hover:text-blue-500 transition-colors duration-300 ${
-            darkMode
-              ? "text-gray-300 hover:text-blue-400"
-              : "text-gray-700 hover:text-blue-600"
-          }`}
-        >
-          Career
-        </Link>
+      {/* Desktop Menu */}
+      <div className="hidden md:flex gap-6">
+        {[
+          { name: "Home", path: "/" },
+          { name: "About", path: "/about" },
+          { name: "Projects", path: "/projects" },
+          { name: "Career", path: "/experience" },
+          { name: "Contact", path: "/contact" },
+        ].map(({ name, path }) => (
+          <Link
+            key={name}
+            to={path}
+            className={`hover:text-blue-500 transition-colors duration-300 ${
+              darkMode
+                ? "text-gray-300 hover:text-blue-400"
+                : "text-gray-700 hover:text-blue-600"
+            }`}
+          >
+            {name}
+          </Link>
+        ))}
+      </div>
 
-        <Link
-          to="/contact"
-          className={`hover:text-blue-500 transition-colors duration-300 ${
-            darkMode
-              ? "text-gray-300 hover:text-blue-400"
-              : "text-gray-700 hover:text-blue-600"
-          }`}
-        >
-          Contact
-        </Link>
+      {/* Dark Mode Toggle & Mobile Menu Button */}
+      <div className="flex items-center gap-4">
         <button
           onClick={() => setDarkMode(!darkMode)}
           className={`p-2 rounded-full hover:bg-opacity-20 transition-colors duration-300 ${
@@ -75,7 +67,39 @@ function Navbar({ darkMode, setDarkMode }) {
         >
           {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
         </button>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-2xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div
+          className={`absolute top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-md flex flex-col items-center gap-4 py-6 md:hidden`}
+        >
+          {[
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+            { name: "Projects", path: "/projects" },
+            { name: "Career", path: "/experience" },
+            { name: "Contact", path: "/contact" },
+          ].map(({ name, path }) => (
+            <Link
+              key={name}
+              to={path}
+              className="text-lg font-medium hover:text-blue-500 transition"
+              onClick={() => setMenuOpen(false)}
+            >
+              {name}
+            </Link>
+          ))}
+        </div>
+      )}
     </nav>
   );
 }
