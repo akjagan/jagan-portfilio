@@ -3,36 +3,66 @@ import { FaCode, FaExternalLinkAlt, FaGithub, FaChevronDown } from "react-icons/
 
 const projects = [
   {
+    title: "Health & Wellness App",
+    description:
+      "A full-stack web application for health and wellness tracking.",
+    category: "MERN Full Stack",
+    techStack: ["React", "Node.js", "MongoDB", "Express.js"],
+    liveLink: "https://heath-wellness.netlify.app/",
+    repoLink: "https://github.com/GanishwarArun/Health-Wellness-Frontend",
+    backendRepoLink:
+      "https://github.com/GanishwarArun/health-wellness--Backend.git",
+  },
+  {
+    title: "Garage Management System",
+    description:
+      "An AI-powered garage management system that streamlines vehicle diagnostics and service tracking.",
+    category: "Full Stack Internship Project",
+    techStack: ["React", "Node.js", "MongoDB", "Express.js", "AI"],
+    liveLink: "https://app.crankcase.ai",
+    repoLink: "https://github.com/robox-corp/garage-client",
+    backendRepoLink: "https://github.com/roboxcorp/crankcase-server.git",
+  },
+
+  {
+    title: "Flight Booking & Reservation System ",
+    description:
+      "A full-stack flight reservation system with authentication, real-time booking, and payment integration.",
+    category: "Cap Stone MERN Full Stack",
+    techStack: ["React", "Node.js", "MongoDB", "Express.js"],
+    liveLink: "https://flight-booking-final-2.netlify.app/",
+    repoLink:
+      "https://github.com/GanishwarArun/flight-final-booking-and-reservation-frontend",
+    backendRepoLink:
+      "https://github.com/GanishwarArun/flight-booking-and-reservation-.git",
+  },
+  {
     title: "Password Reset Flow ",
     description: "A full-stack password reset flow system using MERN stack.",
     category: "MERN Full Stack",
     techStack: ["React", "Node.js", "MongoDB", "Express.js"],
-    liveLink: "https://passwordresetflow-fullfsd-mernstack.netlify.app/user/login",
-    repoLink: "https://github.com/GanishwarArun/Reset-flow-project-13-Full-MERN-stack.git",
-  },
-  {
-    title: "Flight Booking & Reservation System ",
-    description: "A full-stack flight reservation system with authentication, real-time booking, and payment integration.",
-    category: "Cap Stone MERN Full Stack",
-    techStack: ["React", "Node.js", "MongoDB", "Express.js"],
-    liveLink: "https://flight-booking-final-2.netlify.app/",
-    repoLink: "https://github.com/GanishwarArun/flight-final-booking-and-reservation-frontend",
+    liveLink:
+      "https://passwordresetflow-fullfsd-mernstack.netlify.app/user/login",
+    repoLink:
+      "https://github.com/GanishwarArun/Reset-flow-project-13-Full-MERN-stack.git",
   },
   {
     title: "Recipe API Backend",
-    description: "A Node.js and Express-based API for managing and retrieving recipes.",
+    description:
+      "A Node.js and Express-based API for managing and retrieving recipes.",
     category: "Backend",
     techStack: ["Node.js", "Express.js", "MongoDB"],
     liveLink: "https://dashboard.render.com/web/srv-csbo3gi3esus73ftuotg",
-    repoLink: "https://github.com/GanishwarArun/recipie.git",
+    backendRepoLink: "https://github.com/GanishwarArun/recipie.git",
   },
   {
     title: "Bearer Token Authentication API",
-    description: "A backend authentication service using bearer token authorization.",
+    description:
+      "A backend authentication service using bearer token authorization.",
     category: "Backend",
     techStack: ["Node.js", "Express.js", "MongoDB", "JWT"],
     liveLink: "https://dashboard.render.com/web/srv-csfkiq5svqrc73fggue0",
-    repoLink: "https://github.com/GanishwarArun/Task11-Bearer-token.git",
+    backendRepoLink: "https://github.com/GanishwarArun/Task11-Bearer-token.git",
   },
   {
     title: "Movie Searching App",
@@ -44,19 +74,23 @@ const projects = [
   },
   {
     title: "E-Cart App",
-    description: "A fully responsive e-commerce cart application built with React and React Router.",
+    description:
+      "A fully responsive e-commerce cart application built with React and React Router.",
     category: "Frontend React",
     techStack: ["React", "TailwindCSS"],
     liveLink: "https://ganish-router-task6.netlify.app/",
-    repoLink: "https://github.com/GanishwarArun/CART_APP-React-Router-Task-6.git",
+    repoLink:
+      "https://github.com/GanishwarArun/CART_APP-React-Router-Task-6.git",
   },
   {
     title: "Income-Expense Calculator (JS DOM)",
-    description: "A web-based income and expense tracker built using JavaScript DOM manipulation.",
+    description:
+      "A web-based income and expense tracker built using JavaScript DOM manipulation.",
     category: "JavaScript Project",
     techStack: ["JavaScript", "HTML", "CSS"],
     liveLink: "https://ganishwarinc-expcalculator-task-4.netlify.app/",
-    repoLink: "https://github.com/GanishwarArun/income-expenditure-tracker-task-4.git",
+    repoLink:
+      "https://github.com/GanishwarArun/income-expenditure-tracker-task-4.git",
   },
   {
     title: "Landing Page using HTML & TailwindCSS",
@@ -128,14 +162,41 @@ function Projects() {
                   >
                     <FaExternalLinkAlt /> Live Demo
                   </a>
-                  <a
-                    href={project.repoLink}
-                    className="text-blue-500 hover:underline flex items-center gap-1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaGithub /> GitHub Repo
-                  </a>
+                  <div className="flex gap-4">
+                    {project.repoLink ? (
+                      // For full-stack projects
+                      <>
+                        <a
+                          href={project.repoLink}
+                          className="text-blue-500 hover:underline flex items-center gap-1"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FaGithub /> Frontend Repo
+                        </a>
+                        {project.backendRepoLink && (
+                          <a
+                            href={project.backendRepoLink}
+                            className="text-blue-500 hover:underline flex items-center gap-1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <FaGithub /> Backend Repo
+                          </a>
+                        )}
+                      </>
+                    ) : (
+                      // For backend-only projects
+                      <a
+                        href={project.backendRepoLink}
+                        className="text-blue-500 hover:underline flex items-center gap-1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaGithub /> GitHub Repo
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             )}
