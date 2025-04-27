@@ -60,7 +60,7 @@ function Contact() {
               <span className="text-lg">akjagankumar@gmail.com</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/www.linkedin.com/in/jagan-kumar-209945317/"
+              href="https://www.linkedin.com/in/jagan-kumar-209945317/"
               className="flex items-center justify-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
@@ -69,7 +69,7 @@ function Contact() {
               <span className="text-lg">LinkedIn Profile</span>
             </a>
             <a
-              href="https://https://github.com/akjagan"
+              href="https://github.com/akjagan"
               className="flex items-center justify-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"

@@ -15,7 +15,7 @@ const Hero = () => {
 
       {/* Enlarged Profile Image */}
       <motion.img
-        src="/j phot.jpg"
+        src="/j photo-min.jpg"
         alt="K.JAGAN"
         className="w-64 h-64 object-cover rounded-full shadow-2xl border-8 border-blue-500 mb-6 cursor-pointer hover:scale-105 transition-transform duration-300"
         initial={{ opacity: 0, scale: 0.8 }}
@@ -38,7 +38,7 @@ const Hero = () => {
           >
             
             <img
-              src="/j phot.jpg"
+              src="/j photo-min.jpg"
               alt="K.JAGAN"
               className="w-full h-auto object-cover rounded-lg"
             />
