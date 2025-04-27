@@ -34,18 +34,18 @@ portfolio/
 
 ## 🌍 Live Demo   
 🔗 **[Visit Portfolio](https://ganishwar-portfolio.netlify.app/)**  
-📂 **[GitHub Repository](https://github.com/GanishwarArun/your-repo-name)**
+📂 **[GitHub Repository](https://github.com/akjagan/jagan-portfilio)**
 
 ## 🚀 How to Run Locally
 ```bash
-git clone https://github.com/GanishwarArun/your-repo-name.git
+git clone https://github.com/akjagan/your-repo-name.git
 cd portfolio
 npm install
 npm run dev
 ```
 
 ## 📨 Contact
-📧 Email: ganishwardeveloper@gmail.com  
-🔗 LinkedIn: [Ganishwar K](https://www.linkedin.com/in/ganishwar-k-fullstackdeveloper/)  
-💻 GitHub: [GanishwarArun](https://github.com/GanishwarArun)
+📧 Email: akjagankumar@gmail.com  
+🔗 LinkedIn: [K Jagan ](www.linkedin.com/in/jagan-kumar-209945317  
+💻 GitHub: [K Jagan ](https://github.com/akjagan)
 

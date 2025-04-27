@@ -7,25 +7,25 @@ const Experience = () => {
     {
       img: "/certifications/GuviCertification-IIT-M.png",
       alt: "IIT-M Pravartak certified Full Stack Development",
-      link: "https://v2.zenclass.in/certificateDownload/cAGdFM19ObdDmsXD",
+      link: "https://v2.zenclass.in/certificateDownload/2yAYo3LEhzMhToXt?download=true",
       text: "View IIT-M FSD Certification",
     },
     {
       img: "/certifications/GuviCertification - Advanced Js.png",
       alt: "Advanced JS Certification",
-      link: "https://v2.zenclass.in/certificateDownload/iaLy94qtOSO1DssJ",
+      link: "https://v2.zenclass.in/certificateDownload/Asd0WScnZlriPfku?download=true",
       text: "View Advanced JS Certification",
     },
     {
       img: "/certifications/GuviCertification - React JS.png",
       alt: "React Certification",
-      link: "https://v2.zenclass.in/certificateDownload/68XcUrgp98V1F0Nu",
+      link: "https://v2.zenclass.in/certificateDownload/KiGy4CUTx0JMG2jT?download=true",
       text: "View React Certification",
     },
     {
       img: "/certifications/GuviCertification - NodeJS.png",
       alt: "NodeJS Certification",
-      link: "https://v2.zenclass.in/certificateDownload/qGZBGYlrzCZfDpXY",
+      link: "https://v2.zenclass.in/certificateDownload/L7hBqW2R3VcbqebH?download=true",
       text: "View NodeJS Certification",
     },
   ];
@@ -38,12 +38,12 @@ const Experience = () => {
       <div className="mb-10 p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg border dark:border-gray-700">
         <h2 className="text-3xl font-semibold mb-4">Education</h2>
         <p className="text-xl">
-          🎓 Bachelor of Civil Engineering - Anna University
+          🎓 Master Of Business Adminstrative(MBA)- Anna University
         </p>
         <p className="text-lg text-gray-600 dark:text-gray-300">
-          Institution: Vel Tech High Tech Dr.RR and Dr.SR Engineering College
+          Institution: SRM VALLIAMMAI Engineering College
           <br />
-          Year of Graduation: 2016
+          Year of Graduation: 2012
         </p>
       </div>
 
@@ -89,19 +89,18 @@ const Experience = () => {
               ],
             },
             {
-              title: "Operations Manager - ARIVAZHAGI ENTERPRISES",
-              duration: "Jan 2020 - 2024",
+              title: "Operations Manager - AK ENTERPRISES",
+              duration: "Jan 2016 - 2024",
               details: [
                 "📈 Developed and managed business operations, client relationships, strategic planning.",
                 "💡 Showcased strong entrepreneurial and business management skills.",
               ],
             },
             {
-              title: "Content Developer - Officers IAS Academy, Chennai",
-              duration: "June 2018 - March 2020",
+              title: "Media Executive - In DinaMalar , Chennai",
+
               details: [
-                "📝 Developed educational content for Pulse Magazine.",
-                "📚 Demonstrated excellent writing and research abilities.",
+                "📝 Area Coverage and  Advertisment ",
               ],
             },
           ].map((exp, index) => (

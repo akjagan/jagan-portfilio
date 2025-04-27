@@ -9,9 +9,9 @@ const projects = [
     category: "MERN Full Stack",
     techStack: ["React", "Node.js", "MongoDB", "Express.js"],
     liveLink: "https://heath-wellness.netlify.app/",
-    repoLink: "https://github.com/GanishwarArun/Health-Wellness-Frontend",
+    repoLink: "https://github.com/akjagan/Health-Wellness-Frontend.git",
     backendRepoLink:
-      "https://github.com/GanishwarArun/health-wellness--Backend.git",
+      "https://github.com/akjagan/Health-Wellness-Backendend.git",
   },
   {
     title: "Garage Management System",
@@ -32,9 +32,9 @@ const projects = [
     techStack: ["React", "Node.js", "MongoDB", "Express.js"],
     liveLink: "https://flight-booking-final-2.netlify.app/",
     repoLink:
-      "https://github.com/GanishwarArun/flight-final-booking-and-reservation-frontend",
+      "https://github.com/akjagan/flight-booking-and-reservation-fe.git",
     backendRepoLink:
-      "https://github.com/GanishwarArun/flight-booking-and-reservation-.git",
+      "https://github.com/akjagan/flight-booking-and-reservation-be.git",
   },
   {
     title: "Password Reset Flow ",
@@ -42,9 +42,9 @@ const projects = [
     category: "MERN Full Stack",
     techStack: ["React", "Node.js", "MongoDB", "Express.js"],
     liveLink:
-      "https://passwordresetflow-fullfsd-mernstack.netlify.app/user/login",
+      "https://passwordresetflow-fullfsd-mernstack.netlify.app/user/forgot-password",
     repoLink:
-      "https://github.com/GanishwarArun/Reset-flow-project-13-Full-MERN-stack.git",
+      "https://github.com/akjagan/Password-Resetflow---Frontend.git",
   },
   {
     title: "Recipe API Backend",
@@ -52,8 +52,8 @@ const projects = [
       "A Node.js and Express-based API for managing and retrieving recipes.",
     category: "Backend",
     techStack: ["Node.js", "Express.js", "MongoDB"],
-    liveLink: "https://dashboard.render.com/web/srv-csbo3gi3esus73ftuotg",
-    backendRepoLink: "https://github.com/GanishwarArun/recipie.git",
+    liveLink: "https://recipe-lgwe.onrender.com/",
+    backendRepoLink: "https://github.com/akjagan/recipe.git",
   },
   {
     title: "Bearer Token Authentication API",
@@ -61,16 +61,16 @@ const projects = [
       "A backend authentication service using bearer token authorization.",
     category: "Backend",
     techStack: ["Node.js", "Express.js", "MongoDB", "JWT"],
-    liveLink: "https://dashboard.render.com/web/srv-csfkiq5svqrc73fggue0",
-    backendRepoLink: "https://github.com/GanishwarArun/Task11-Bearer-token.git",
+    liveLink: "https://task11-bearer-token-1.onrender.com/",
+    backendRepoLink: "https://github.com/akjagan/guvi-task-11-bearer-token.git",
   },
   {
     title: "Movie Searching App",
     description: "A movie search application built using React Router.",
     category: "Frontend",
     techStack: ["React", "React Router"],
-    liveLink: "https://ganish-moviesearchingapp-reactrouter7.netlify.app/",
-    repoLink: "https://github.com/GanishwarArun/Movie-Searching-app-task-7.git",
+    liveLink: "https://moviesearchingtaskwithreact.netlify.app/",
+    repoLink: "https://github.com/akjagan/movie-searching-with-react-task.git",
   },
   {
     title: "E-Cart App",
@@ -78,9 +78,9 @@ const projects = [
       "A fully responsive e-commerce cart application built with React and React Router.",
     category: "Frontend React",
     techStack: ["React", "TailwindCSS"],
-    liveLink: "https://ganish-router-task6.netlify.app/",
+    liveLink: "https://superb-manatee-be0d22.netlify.app/",
     repoLink:
-      "https://github.com/GanishwarArun/CART_APP-React-Router-Task-6.git",
+      "https://github.com/akjagan/react-router-project.git",
   },
   {
     title: "Income-Expense Calculator (JS DOM)",
@@ -88,17 +88,17 @@ const projects = [
       "A web-based income and expense tracker built using JavaScript DOM manipulation.",
     category: "JavaScript Project",
     techStack: ["JavaScript", "HTML", "CSS"],
-    liveLink: "https://ganishwarinc-expcalculator-task-4.netlify.app/",
+    liveLink: "https://jaganincomeexp.netlify.app/",
     repoLink:
-      "https://github.com/GanishwarArun/income-expenditure-tracker-task-4.git",
+      "https://github.com/akjagan/guvi-income-expen-to-do-task-4.git",
   },
   {
     title: "Landing Page using HTML & TailwindCSS",
     description: "A responsive landing page built with HTML and TailwindCSS.",
     category: "Frontend",
     techStack: ["HTML", "TailwindCSS"],
-    liveLink: "https://ganishwartailwindtask-2.netlify.app/",
-    repoLink: "https://github.com/GanishwarArun/task-2-tailwind",
+    liveLink: "https://app.netlify.com/sites/jagantask2/overview",
+    repoLink: "https://github.com/akjagan/guvi-task2-23.8.24.git",
   },
 ];
 

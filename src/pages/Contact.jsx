@@ -43,7 +43,7 @@ function Contact() {
           <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
           <div className="space-y-4">
             <a
-              href="https://wa.me/919789909345"
+              href="https://wa.me/919940513552"
               className="flex items-center justify-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-400 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,14 +53,14 @@ function Contact() {
             </a>
 
             <a
-              href="mailto:ganishwardeveloper@gmail.com"
+              href="mailto:akjagankumar@gmail.com"
               className="flex items-center justify-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
             >
               <FaEnvelope className="text-2xl" />
-              <span className="text-lg">ganishwardeveloper@gmail.com</span>
+              <span className="text-lg">akjagankumar@gmail.com</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/ganishwar-k-fullstackdeveloper/"
+              href="https://www.linkedin.com/in/www.linkedin.com/in/jagan-kumar-209945317/"
               className="flex items-center justify-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
@@ -69,7 +69,7 @@ function Contact() {
               <span className="text-lg">LinkedIn Profile</span>
             </a>
             <a
-              href="https://github.com/GanishwarArun"
+              href="https://https://github.com/akjagan"
               className="flex items-center justify-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"

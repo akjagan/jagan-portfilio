@@ -1,3 +1,5 @@
+
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
@@ -28,7 +30,7 @@ function Navbar({ darkMode, setDarkMode }) {
         className="text-xl font-bold cursor-pointer hover:text-blue-500 transition-colors duration-300"
         onClick={() => setMenuOpen(false)} 
       >
-        Ganishwar Portfolio
+        Jagan Portfolio
       </Link>
 
       {/* Desktop Menu */}

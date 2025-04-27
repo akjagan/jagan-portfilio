@@ -15,8 +15,8 @@ const Hero = () => {
 
       {/* Enlarged Profile Image */}
       <motion.img
-        src="/Ganishwar.png"
-        alt="Ganishwar Arun"
+        src="/j phot.jpg"
+        alt="K.JAGAN"
         className="w-64 h-64 object-cover rounded-full shadow-2xl border-8 border-blue-500 mb-6 cursor-pointer hover:scale-105 transition-transform duration-300"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -38,8 +38,8 @@ const Hero = () => {
           >
             
             <img
-              src="/Ganishwar.png"
-              alt="Ganishwar Arun"
+              src="/j phot.jpg"
+              alt="K.JAGAN"
               className="w-full h-auto object-cover rounded-lg"
             />
           </motion.div>
@@ -75,7 +75,7 @@ const Hero = () => {
         className="flex space-x-6"
       >
         <a
-          href="/Ganishwar_ppt_resume.pdf"
+          href="/jagan resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg text-xl font-semibold transition-transform transform hover:scale-105 shadow-lg"
